@@ -16,9 +16,10 @@ jobs:
       - uses: actions/setup-node@v2
         with: 
           node-version: '14'
-      - name: Install dependencies
+      - name: Instalar dependencias de npm con npm install
         run: npm install
       - name: Lint
         run: npm run eslint
       - name: Run test
         run: npm run test
+
